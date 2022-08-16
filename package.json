@@ -9,7 +9,7 @@
         "build": "gatsby build --prefix-paths",
         "serve": "gatsby serve",
         "prettydock": "npm i docky --location=global && npm i prettier --location=global",
-        "docky": "docky src/pages/docs/*.md   --watch 'src/pages/*.js','./README.md'    --use-readme=true",
+        "docky": "docky src/pages/*.md,src/*.js','./README.md'     --watch 'src/*.js','./README.md'    --use-readme=true",
         "pretty": "prettier --write ./static && prettier --write ./docs && prettier --write ./notes",
         "git": "git add . && git commit -m 'update' && git pull && git push"
     },
@@ -22,7 +22,7 @@
         "docky": "^1.5.4",
         "fs-extra": "7.0.1",
         "gatsby": "^2.0.0",
-        "gatsby-plugin-disqus": "^1.2.3",
+        "gatsby-plugin-disqus": "^1.2.4",
         "gatsby-plugin-no-sourcemaps": "^4.17.0",
         "gatsby-plugin-offline": "^5.9.0",
         "gatsby-plugin-react-helmet": "3.3.3",
